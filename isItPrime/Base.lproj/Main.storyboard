@@ -26,11 +26,61 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK8-46-Xsm">
+                                <rect key="frame" x="180" y="115" width="241" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8y6-Pr-OO8"/>
+                                    <constraint firstAttribute="width" constant="241" id="Gzd-ic-CPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-eP-Xsu">
+                                <rect key="frame" x="252" y="167" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3E9-os-rBx"/>
+                                    <constraint firstAttribute="width" constant="97" id="z0l-XR-Y6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pis-WX-AcT">
+                                <rect key="frame" x="244" y="242" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="caM-t4-Hxk"/>
+                                    <constraint firstAttribute="height" constant="30" id="zt3-rT-T5S"/>
+                                </constraints>
+                                <state key="normal" title="Is it?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-dI-yc6">
+                                <rect key="frame" x="226" y="313" width="149" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4O9-UA-qBH"/>
+                                    <constraint firstAttribute="width" constant="42" id="v4X-aa-t9P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="BhF-eP-Xsu" secondAttribute="centerX" id="14b-zl-Bah"/>
+                            <constraint firstAttribute="centerY" secondItem="RXK-dI-yc6" secondAttribute="centerY" id="5WW-hr-FM4"/>
+                            <constraint firstItem="dK8-46-Xsm" firstAttribute="top" secondItem="tpw-SY-oUL" secondAttribute="bottom" constant="41" id="Acm-xX-6Oi"/>
                             <constraint firstItem="tpw-SY-oUL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="EpB-Bb-XY9"/>
+                            <constraint firstAttribute="centerY" secondItem="Pis-WX-AcT" secondAttribute="centerY" id="FGx-Ln-eIH"/>
+                            <constraint firstAttribute="centerX" secondItem="RXK-dI-yc6" secondAttribute="centerX" id="I0O-XQ-4rd"/>
+                            <constraint firstAttribute="centerY" secondItem="BhF-eP-Xsu" secondAttribute="centerY" id="NlL-GK-gZc"/>
                             <constraint firstAttribute="centerX" secondItem="tpw-SY-oUL" secondAttribute="centerX" id="OS0-5c-dHJ"/>
+                            <constraint firstItem="Pis-WX-AcT" firstAttribute="top" secondItem="BhF-eP-Xsu" secondAttribute="bottom" constant="45" id="PhS-5U-Gma"/>
+                            <constraint firstAttribute="centerX" secondItem="Pis-WX-AcT" secondAttribute="centerX" id="RpA-U5-t0B"/>
+                            <constraint firstItem="BhF-eP-Xsu" firstAttribute="top" secondItem="dK8-46-Xsm" secondAttribute="bottom" constant="31" id="bmb-Z8-Mi0"/>
+                            <constraint firstItem="RXK-dI-yc6" firstAttribute="top" secondItem="Pis-WX-AcT" secondAttribute="bottom" constant="38" id="gOw-hr-cfT"/>
+                            <constraint firstAttribute="centerX" secondItem="dK8-46-Xsm" secondAttribute="centerX" id="z4t-4O-6K7"/>
                         </constraints>
                     </view>
                 </viewController>
